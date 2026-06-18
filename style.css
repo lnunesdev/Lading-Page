@@ -19,12 +19,12 @@
 
         header {
             background: linear-gradient(135deg, #1a1433 0%, #2d1f4e 100%);
-            padding: 20px 0;
+            padding: 40px 0;
             position: fixed;
             width: 100%;
             top: 0;
             z-index: 1000;
-            box-shadow: 0 2px 20px rgba(106, 13, 173, 0.3);
+            box-shadow: 0 2px 20px rgba(80, 9, 131, 0.3);
         }
 
         nav {
@@ -34,18 +34,8 @@
             flex-wrap: wrap;
         }
 
-        .logo {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #c084fc;
-            letter-spacing: 2px;
-        }
-
-        .logo span {
-            color: #a78bfa;
-        }
-
         .nav-links {
+            padding-left: 70px;
             display: flex;
             gap: 30px;
             list-style: none;
@@ -62,6 +52,7 @@
 
         .nav-links a:hover {
             color: #c084fc;
+            text-shadow: 0 0 10px #d5bce0c5, 0 0 20px #8d0dc0cb;
         }
 
         .hero {
@@ -85,14 +76,16 @@
         }
 
         .hero-text h1 {
-            font-size: 3rem;
+            font-size: 2.3rem;
             font-weight: 700;
             margin-bottom: 10px;
-            background: linear-gradient(90deg, #a78bfa, #c084fc, #a78bfa);
+            background: linear-gradient(90deg, #ac9fd4, #c084fc, #513c8d);
             background-size: 200%;
+            background-clip: text;  
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             animation: shine 3s infinite linear;
+            text-shadow: 0 0 10px #51296400, 0 0 20px #8d0dc0cb;
         }
 
         @keyframes shine {
@@ -480,9 +473,6 @@
         }
 
         @media (max-width: 480px) {
-            .logo {
-                font-size: 1.2rem;
-            }
             .hero-text h1 {
                 font-size: 1.8rem;
             }
