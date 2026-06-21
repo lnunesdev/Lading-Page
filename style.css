@@ -340,6 +340,11 @@
             margin-bottom: 15px;
         }
 
+        .project-card a {
+            color: #b8a6e6;
+            text-decoration: none;
+        }
+
         .project-tag {
             display: inline-block;
             background: #2d1f4e;
