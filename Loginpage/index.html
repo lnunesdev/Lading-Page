@@ -1,34 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login · Roxo & Vídeo</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="video-container">
-        <video autoplay loop muted playsinline src="/video/backgroundvideo.mp4">
-            
-        </video>
-    </div>
-
-    <div class="container">
-        <h1>Login</h1>
-        <form action="#">
-  <div class="login-box">
-    <label for="usuario">Usuário:</label>
-    <input type="text" id="usuario" name="usuario" placeholder="Usuário" required>
+  <div id="preloader">
+    <div class="spinner"></div>
   </div>
 
-  <div class="login-box">
-    <label for="password">Senha:</label>
-    <input type="password" id="password" name="password" placeholder="Senha" required>
-  </div>
-        </form>
-        <button type="submit">Entrar</button>
-        <button type="submit">Cadastrar</button>
+  <video class="bg-video" autoplay muted loop playsinline>
+    <source src="/video/backgroundvideoloop.mp4" type="video/mp4">
+    Seu navegador não suporta vídeo em loop.
+  </video>
+
+  <div class="overlay"></div>
+
+  <div class="login-card">
+
+    <div class="login-header">
+      <div class="icon-circle">
+        <i class="fa-regular fa-address-card"></i>
+      </div>
+      <h1>Bem-vindo</h1>
+      <p>Entre com sua conta</p>
     </div>
 
+    <form action="#" method="post">
+      <div class="input-group">
+        <input type="email" id="email" placeholder="Seu e-mail" required>
+        <i class="fas fa-envelope"></i>
+      </div>
+
+      <div class="input-group">
+        <input type="password" id="password" placeholder="Senha" required>
+        <i class="fas fa-lock"></i>
+      </div>
+
+      <div class="login-options">
+        <label class="remember">
+          <input type="checkbox" checked>
+          <span>Lembrar-me</span>
+        </label>
+        <a href="#" class="forgot-link">Esqueceu a senha?</a>
+      </div>
+
+      <button type="submit" class="btn-login">
+        <span>Entrar</span>
+        <i class="fas fa-arrow-right"></i>
+      </button>
+    </form>
+
+    <div class="signup-text">
+      Não tem uma conta? <a href="#">Criar agora</a>
+    </div>
+
+  </div>
 </body>
 </html>
