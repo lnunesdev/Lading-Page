@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Lucas Nunes Coelho | Desenvolvedor Front End</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
     <link
       rel="stylesheet"
@@ -87,7 +90,7 @@
               <div class="label">Ano de estudos</div>
             </div>
             <div class="stat-item">
-              <div class="number">2</div>
+              <div class="number">5</div>
               <div class="label">Projetos desenvolvidos</div>
             </div>
             <div class="stat-item">
@@ -155,7 +158,7 @@
           </div>
           <div class="project-card">
             <div class="icon"><i class="fas fa-coffee"></i></div>
-            <a target="_blank" href="/ShopCoffe/homepagecoffe.html">
+            <a target="_blank" href="./ShopCoffe/homepagecoffe.html">
               <h3>Coffee Shop</h3>
             </a>
             <p>Em manutenção 🔧</p>
@@ -165,7 +168,7 @@
           </div>
           <div class="project-card">
             <div class="icon"><i class="fas fa-code"></i></div>
-            <a target="_blank" href="/Loginpage/index.html">
+            <a target="_blank" href="./Loginpage/index.html">
               <h3>Login Page</h3>
             </a>
             <p>Página de Login resposiva e animada.</p>
@@ -176,7 +179,7 @@
           </div>
           <div class="project-card">
             <div class="icon"><i class="fa-solid fa-calculator"></i></div>
-            <a target="_blank" href="/Calculation/index.html">
+            <a target="_blank" href="./Calculation/index.html">
               <h3>Calculadora</h3>
             </a>
             <p>
@@ -239,15 +242,15 @@
             >Currículo atualizado:
           </p>
           <a
-            href="/Docs/lucasnunescoelhodoc.pdf"
-            download="/Docs/lucasnunescoelhodoc.pdf"
+            href="./Docs/lucasnunescoelhodoc.pdf"
+            download="lucasnunescoelhodoc.pdf"
             class="btn btn-primary"
             ><i class="fas fa-download"></i> Baixar Currículo (PDF)</a
           >
           <br />
           <br />
           <a
-            href="/Docs/lucasnunescoelhodoc.pdf"
+            href="./Docs/lucasnunescoelhodoc.pdf"
             target="_blank"
             class="btn btn-primary"
             ><i class="fa-regular fa-eye"></i> Visualizar Currículo (PDF)</a
@@ -280,5 +283,18 @@
         <p>&copy; 2026 Lucas Nunes Coelho | Desenvolvedor Front End</p>
       </div>
     </footer>
+    <script>
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if(entry.isIntersecting) {
+            entry.target.classList.add('reveal-active');
+          }
+        });
+      }, { threshold: 0.1 });
+      document.querySelectorAll('.skill-card, .project-card, .contact-item, .section-title, .section-subtitle, .about-content').forEach(el => {
+        el.classList.add('reveal');
+        observer.observe(el);
+      });
+    </script>
   </body>
 </html>
