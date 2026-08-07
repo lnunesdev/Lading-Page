@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"/>
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --roxo1: #A361C5;
+            --roxo2: #873CAD;
+            --roxo3: #761FA3;
+            --roxo4: #5E0C88;
+            --roxo5: #49056B;
+            --roxo6: #09010e;
+
+            --fonte1: "Dancing Script", cursive;
+            --fonte2: "Urbanist", sans-serif;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            background-color: rgb(0, 0, 0);
+            color: white;
+            display: flex;
+            padding: 20px 20px;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.63);
+        }
+
+        header h1 {
+            font-family: 'Times New Roman', Times, serif;
+            flex: 1;
+            letter-spacing: 3px;
+        }
+
+        header a{
+            text-decoration: none;
+            color: white;
+        }
+
+        header a:hover {
+            text-decoration: underline;
+            color: wheat;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+            font-size: 1.5rem;
+        }
+
+        #hero {
+            min-height: 80vh;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/sagui.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+
+        #hero h2 {
+            text-align: center;
+            padding-top: 140px;
+            font-size: 4rem;
+            font-family: var(--fonte1);
+        }
+
+        #hero p {
+            text-align: center;
+            padding-top: 200px;
+            font-family: var(--fonte2);
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        #sobre {
+            display: flex;
+        }
+
+        #sobre p{
+            max-width: 700px;
+            margin: auto;
+        }
+
+        .grade-portfolio {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .grade-portfolio img {
+            width: 100%;
+        }
+
+
+        
+    </style>
+
+    <title>Nunestudio</title>
+</head>
+<body>
+    <header>
+        <h1>Nunestudio</h1>
+        <nav>
+            <ul>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <h2>Autoestima, memórias e visibilidade.</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam aliquid molestiae voluptatibus harum odit non corrupti officia beatae eligendi dolorum rem quos labore, optio sit minima eius, illum est! Distinctio.
+        Numquam ea modi asperiores aspernatur non necessitatibus animi, et itaque dignissimos cum ad mollitia voluptate magni consequatur nihil maiores architecto amet doloribus quia voluptas esse eius optio officiis harum! Non!</p>
+
+    </section>
+
+    <section id="sobre">
+        <div>
+            <picture>
+                <img src="#" alt="">
+            </picture>
+        </div>
+        <h2>Lucas Nunes</h2>
+        <p>Eum quibusdam doloribus debitis sit corrupti quis labore fugiat commodi cumque architecto. Corrupti voluptatem modi similique iusto reprehenderit nulla pariatur odit autem dolor! Voluptas temporibus, libero recusandae voluptates aliquam adipisci.
+        Impedit repellendus inventore nisi laudantium minima vero tenetur odio exercitationem ad quia, labore velit omnis est reiciendis ipsam libero rerum numquam iure officia. Tempore, amet maiores? Eligendi laudantium exercitationem voluptatum?
+        Repellat, quidem vero, repudiandae aspernatur modi error vel quod omnis magni eligendi dolore, amet voluptas ratione numquam consequuntur ad maxime voluptatibus assumenda dolorum animi sint inventore hic fuga? Quo, eum.
+       </p>
+    </section>
+
+    <section id="portfolio">
+        <div class="grade-portfolio">
+            <figure><img src="../image/baby.jpg" alt="bebe comendo bolo"></figure>
+            <figure><img src="../image/15anos.jpg" alt="menina deitada na grama com balão de 15 anos"></figure>
+            <figure><img src="../image/casal.jpg" alt="mulher sentada no colo do namorado olhando para ele de maneira apaixonada"></figure>
+            <figure><img src="../image/prewdn.jpg" alt="casal se olhando apaixonadamente antes do casamento"></figure>
+            <figure><img src="../image/casamento.jpg" alt="mãos de um casal que se casou se tocando"></figure>
+            <figure><img src="../image/gravida.jpg" alt="mulher grávida fazendo carinho na barriga"></figure>
+            <figure><img src="../image/moon.jpg" alt="lua em sua meia fase"></figure>
+            <figure><img src="../image/greenbird.jpg" alt="passarinho comendo acerola"></figure>
+        </div>
+    </section>
+
+    <footer id="contato">
+        <address>
+            <i class="fa-brands fa-whatsapp"></i>
+            <a href="https://wa.me/5524992072270">WhatsApp</a>
+            <i class="fa-regular fa-envelope"></i>
+            <a href="mailto:dev.lucasnunescoelho@gmail.com">E-mail</a>
+        </address>
+    </footer>
+
+</body>
+</html>

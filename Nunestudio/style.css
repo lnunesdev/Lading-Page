@@ -1,0 +1,82 @@
+        @charset "UTF-8";
+        @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+        :root {
+            --roxo1: #A361C5;
+            --roxo2: #873CAD;
+            --roxo3: #761FA3;
+            --roxo4: #5E0C88;
+            --roxo5: #49056B;
+            --roxo6: #09010e;
+
+            --fonte1: "Dancing Script", cursive;
+            --fonte2: "Urbanist", sans-serif;
+        }
+
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            position: fixed;
+            width: 100%;
+            background-color: black;
+            color: white;
+            display: flex;
+            padding: 20px 20px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        header a{
+            text-decoration: none;
+            color: white;
+        }
+
+        header ul {
+            display: flex;
+            list-style: none;
+            gap: 15px;
+        }
+
+        header h1 {
+            flex: 1;
+        }
+
+        .grade-portfolio {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 16px;
+        }
+
+        .grade-portfolio img {
+            width: 100%;
+        }
+
+        #hero {
+            min-height: 80vh;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/sagui.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            color: white;
+        }
+
+        #hero h2 {
+            text-align: center;
+            padding: 80px;
+            font-size: 4rem;
+            font-family: var(--fonte1);
+        }
+
+        #hero p {
+            text-align: center;
+            padding-top: 200px;
+            font-family: var(--fonte2);
+            margin: 0 auto;
+            max-width: 50%;
+        }
+        
