@@ -197,6 +197,64 @@
         footer p {
             font-size: 1.5rem;
         }
+
+        @media (max-width:860px) {
+
+            #hero, #calltoact{
+                background-attachment: scroll;
+            }
+
+            #hero h2{
+                font-size: 3.5rem;
+                padding: 140px 20px;
+            }
+
+            #hero p{
+                padding-top: 10px;
+                padding-bottom: 50px;
+            }
+
+            #sobre {
+                flex-wrap: wrap;
+            }
+
+            #sobre p {
+                padding: 0px 30px 30px 30px;
+            }
+
+            .grade-portfolio {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+
+            footer {
+                flex-wrap: wrap;
+            }
+
+            address a{
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            footer p{
+                font-size: 1.2rem;
+                padding-right: 20px;
+            }
+
+        }
+
+        @media (max-width:600px) {
+
+            header h1{
+                font-size: 1.6rem;
+            }
+
+            header ul{
+                gap: 10px;
+                font-size: 0.9rem;
+            }
+        }
         
     </style>
 
