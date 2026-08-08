@@ -1,4 +1,4 @@
-        @charset "UTF-8";
+ @charset "UTF-8";
         @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
 
         :root {
@@ -20,15 +20,31 @@
             box-sizing: border-box;
         }
 
+        html {
+            scroll-padding-top: 75px;
+            background-color: black;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
         header {
             position: fixed;
             width: 100%;
-            background-color: black;
+            background-color: rgb(0, 0, 0);
             color: white;
             display: flex;
             padding: 20px 20px;
             align-items: center;
             justify-content: center;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.63);
+        }
+
+        header h1 {
+            font-family: var(--fonte2);
+            flex: 1;
+            letter-spacing: 3px;
         }
 
         header a{
@@ -36,14 +52,110 @@
             color: white;
         }
 
+        header a:hover {
+            text-decoration: underline;
+            color: wheat;
+        }
+
         header ul {
             display: flex;
             list-style: none;
-            gap: 15px;
+            gap: 30px;
+            font-size: 1.5rem;
         }
 
-        header h1 {
-            flex: 1;
+        #hero {
+            min-height: 80vh;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/sagui.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+
+        #hero h2 {
+            text-align: center;
+            padding-top: 140px;
+            font-size: 4rem;
+            font-family: var(--fonte1);
+        }
+
+        #hero p {
+            text-align: center;
+            padding-top: 200px;
+            font-family: var(--fonte2);
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        #sobre {
+            display: flex;
+            background-color: #0f0e01;
+            color: white;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #sobre p{
+            max-width: 700px;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 20px;
+        }
+
+        #sobre h2 {
+            padding: 40px;
+            font-size: 3rem;
+            text-align: center;
+        }
+
+        .profile-picture img{
+            max-width: 400px;
+            border-radius: 50%;
+            padding: 50px;
+        }
+
+        #calltoact {
+            margin-bottom: 15px;
+            text-align: center;
+            padding: 20px;
+            min-height: 40vh;
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/backgreen.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: white;
+        }
+
+        #calltoact h2 {
+            font-size: 3rem;
+            padding: 40px;
+        }
+
+        #calltoact p {
+            max-width: 600px;
+            margin: auto;
+            padding-bottom: 20px;
+        }
+
+        #calltoact button {
+            margin: 20px;
+            padding: 20px 40px;
+            font-size: 1.5rem;
+            border-radius: 20px;
+            background-color: #324218;
+            border: none;
+            color: white;
+            border: 3px solid #00000010;
+        }
+
+        #calltoact button:hover {
+            background-color: #4b6b18;
+            color: wheat;
+            border: 3px solid #10110560;
+            cursor: pointer;
         }
 
         .grade-portfolio {
@@ -56,27 +168,81 @@
             width: 100%;
         }
 
-        #hero {
-            min-height: 80vh;
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../image/sagui.jpg);
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
+        footer {
+            display: flex;
+            height: 12vh;
+            align-items: center;
+            justify-content: center;
+            background-color: black;
             color: white;
         }
 
-        #hero h2 {
-            text-align: center;
-            padding: 80px;
-            font-size: 4rem;
-            font-family: var(--fonte1);
+        address a{
+            text-decoration: none;
+            color: white;
+            padding: 30px;
+            font-size: 1.5rem;
         }
 
-        #hero p {
-            text-align: center;
-            padding-top: 200px;
-            font-family: var(--fonte2);
-            margin: 0 auto;
-            max-width: 50%;
+        footer p {
+            font-size: 1.5rem;
+        }
+
+        @media (max-width:860px) {
+
+            #hero, #calltoact{
+                background-attachment: scroll;
+            }
+
+            #hero h2{
+                font-size: 3.5rem;
+                padding: 140px 20px;
+            }
+
+            #hero p{
+                padding-top: 10px;
+                padding-bottom: 50px;
+            }
+
+            #sobre {
+                flex-wrap: wrap;
+            }
+
+            #sobre p {
+                padding: 0px 30px 30px 30px;
+            }
+
+            .grade-portfolio {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 8px;
+            }
+
+            footer {
+                flex-wrap: wrap;
+            }
+
+            address a{
+                font-size: 1rem;
+                padding: 10px;
+            }
+
+            footer p{
+                font-size: 1.2rem;
+                padding-right: 20px;
+            }
+
+        }
+
+        @media (max-width:600px) {
+
+            header h1{
+                font-size: 1.6rem;
+            }
+
+            header ul{
+                gap: 10px;
+                font-size: 0.9rem;
+            }
         }
         
