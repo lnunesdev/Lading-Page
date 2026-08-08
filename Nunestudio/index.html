@@ -52,7 +52,7 @@
         }
 
         header h1 {
-            font-family: 'Times New Roman', Times, serif;
+            font-family: var(--fonte2);
             flex: 1;
             letter-spacing: 3px;
         }
@@ -101,7 +101,7 @@
 
         #sobre {
             display: flex;
-            background-color: #2d3013;
+            background-color: #0f0e01;
             color: white;
             justify-content: center;
             align-items: center;
@@ -179,9 +179,23 @@
         }
 
         footer {
-            height: 15vh;
-            text-align: center;
+            display: flex;
+            height: 12vh;
             align-items: center;
+            justify-content: center;
+            background-color: black;
+            color: white;
+        }
+
+        address a{
+            text-decoration: none;
+            color: white;
+            padding: 30px;
+            font-size: 1.5rem;
+        }
+
+        footer p {
+            font-size: 1.5rem;
         }
         
     </style>
@@ -245,11 +259,13 @@
     </section>
 
     <footer id="contato">
+        <p>Contato:</p>
         <address>
-            <i class="fa-brands fa-whatsapp"></i>
-            <a href="https://wa.me/5524992072270">WhatsApp</a>
-            <i class="fa-regular fa-envelope"></i>
-            <a href="mailto:dev.lucasnunescoelho@gmail.com">E-mail</a>
+            
+            <a href="https://wa.me/5524992072270"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+            
+            <a href="mailto:lucascoelhoprof@gmail.com"><i class="fa-regular fa-envelope"></i> E-mail</a>
+
         </address>
     </footer>
 
