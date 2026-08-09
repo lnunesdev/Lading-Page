@@ -87,6 +87,7 @@
             font-family: var(--fonte2);
             margin: 0 auto;
             width: 50%;
+            font-size: 1.4rem;
         }
 
         #sobre {
@@ -140,18 +141,19 @@
             padding-bottom: 20px;
         }
 
-        #calltoact button {
+        .butcontact {
+            text-decoration: none;
+            color: white;
             margin: 20px;
             padding: 20px 40px;
             font-size: 1.5rem;
             border-radius: 20px;
             background-color: #324218;
             border: none;
-            color: white;
             border: 3px solid #00000010;
         }
 
-        #calltoact button:hover {
+        .butcontact:hover {
             background-color: #4b6b18;
             color: wheat;
             border: 3px solid #10110560;
@@ -211,6 +213,18 @@
             #sobre p {
                 padding: 0px 30px 30px 30px;
             }
+
+            .butcontact {
+            text-decoration: none;
+            color: white;
+            margin: 20px;
+            padding: 10px 20px;
+            font-size: 1.5rem;
+            border-radius: 20px;
+            background-color: #324218;
+            border: none;
+            border: 3px solid #00000010;
+        }
 
             .grade-portfolio {
                 display: grid;
