@@ -28,7 +28,8 @@ header {
     align-items: center;
     height: 55px;
     width: 100%;
-    justify-content: space-between
+    justify-content: space-between;
+    position: fixed;
 }
 
 .fa-spotify{
@@ -103,13 +104,18 @@ header {
     font-weight: bold;
 }
 
+.conteudo {
+    #
+}
+
 .container-biblioteca {
-    max-width: 300px;
+    max-width: 40vh;
     height: 90vh;
     color: white;
     background-color: var(--cor4);
     border-radius: 5px;
-    margin-left: 5px;
+    margin: 10px;
+    position: left;
 }
 
 .top-biblioteca{
@@ -128,6 +134,14 @@ header {
     float: right;
     margin-left: auto;
     margin-right: 10px;
+
+    transition: transform 0.3s;
+}
+
+.top-biblioteca button:hover {
+    transform: scale(1.02);
+    cursor: pointer;
+    background-color: var(--cor2);
 }
 
 .container-biblioteca h2.title {
@@ -157,6 +171,13 @@ header {
     font-weight: bold;
     font-size: 0.7rem;
     margin: 15px 0px 0px 0px;
+
+    transition: transform 0.3s;
+}
+
+.box-info button:hover{
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 .container-info {
@@ -170,12 +191,21 @@ header {
     padding: 10px 0px 0px 20px;
 }
 
+.container-info a:hover{
+    color: white;
+}
+
 .legalidades {
     padding-bottom: 30px;
 }
 
-.cookies a{
+.cookies a {
     color: white;
+}
+
+.cookies a:hover {
+    font-weight: bold;
+    text-decoration: underline;
 }
 
 .language-button button{
@@ -186,6 +216,13 @@ header {
     color: white;
     background: transparent;
     font-weight: bold;
+
+    transition: transform 0.3s;
+}
+
+.language-button button:hover{
+    transform: scale(1.02);
+    cursor: pointer;
 }
 
 @media (max-width:1200px) {
